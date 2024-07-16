@@ -1,0 +1,596 @@
+@font-face {
+  font-family: "ale_sc";
+  src: url("../font/Alegreya_SC/");
+}
+
+@font-face {
+  font-family: "ale_sans";
+  src: url("../font/Alegreya_Sans/AlegreyaSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "nixie";
+  src: url("../font/Nixie_One/NixieOne-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "ale_sc";
+}
+
+/* ****** general styling ******* */
+
+:root {
+  --primary-color: white;
+  --second-color: #000000;
+  --third-color: rgb(164, 161, 154);
+  --forth-color: rgb(241, 240, 240);
+  --fifth-color: rgb(106, 106, 106);
+  --sixth-color: rgb(58, 79, 82);
+  --seventh-color: rgba(58, 79, 82, 0.803);
+  --eighth-color: rgb(255, 255, 255);
+  --ninth-color: rgb(77, 167, 202);
+  --tenth-color: rgb(241, 240, 240);
+  --eleventh-color: rgb(44, 62, 81);
+}
+
+/* ********** landingpage ******** */
+
+.landingpage {
+  background-image: url("../img/hero-background.jpg");
+  background-position: cover;
+  background-repeat: no-repeat;
+  /* height: 100vh; */
+  color: var(--primary-color);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-landingpage {
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.burger-wrapper {
+  padding: 1.8rem;
+}
+
+.burger-inside {
+  background-color: var(--primary-color);
+  height: 3px;
+  width: 30px;
+  margin: 6px;
+  border-radius: 10px;
+}
+
+.slogan {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 78vh;
+}
+
+.slogan-landingpage {
+  font-family: "nixie";
+  font-size: 3.9rem;
+  font-weight: 200;
+}
+
+.underslogan-landingpage {
+  font-size: 1.4rem;
+  color: var(--third-color);
+}
+
+/* ****** latest work section ******* */
+
+.latest-work,
+.blog {
+  background-color: var(--forth-color);
+  height: 100vh;
+}
+
+.up-latest-work,
+.up-blog {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  padding: 4rem 0rem 1rem 9rem;
+}
+
+.title-latest-work,
+.title-blog {
+  font-family: "ale_sans";
+  color: var(--sixth-color);
+  font-size: 2rem;
+}
+
+.text-latest-work,
+.text-blog {
+  font-family: Helvetica, sans-serif;
+  color: var(--fifth-color);
+  padding-top: 2rem;
+}
+/* ******** button right **********/
+.right {
+  padding: 4rem 9rem 1rem 0rem;
+}
+
+.right button {
+  font-family: Helvetica, sans-serif;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  font-size: 1rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.right button:hover {
+  color: var(--primary-color);
+  background-color: var(--sixth-color);
+}
+
+/* **** gallery latest work ***** */
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.gallery-img {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-container img {
+  display: block;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.img-container:hover img {
+  transform: scale(1.2);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--seventh-color);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s ease;
+}
+
+.img-container:hover .overlay {
+  opacity: 1;
+}
+
+.view-more {
+  background: none;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  font-size: 1rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.view-more:hover {
+  background: var(--primary-color);
+  color: var(--second-color);
+}
+
+/* ******* section services ******* */
+
+.services {
+  background-image: url("../img/services.png");
+  background-position: cover;
+  background-repeat: no-repeat;
+  height: 65vh;
+  color: var(--eighth-color);
+  font-family: "ale_sans";
+}
+
+.services::before {
+  content: "";
+  position: absolute;
+  top: 105rem;
+  left: 50%;
+  width: 100vw;
+  height: 50vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  transform: translateX(-50%);
+}
+
+.up-services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+.title-services {
+  font-size: 2.4rem;
+}
+
+.text-services {
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 100;
+  padding-top: 1rem;
+}
+
+/*  ******* icon boxes ********/
+
+.icon-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 7rem;
+}
+
+.service-icon {
+  width: 21vw;
+  text-align: center;
+}
+
+.service-icon h3 {
+  font-size: 1.6rem;
+}
+
+.service-icon p {
+  font-family: Helvetica, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 100;
+  padding-top: 1rem;
+}
+
+/* ****** section blog ******* */
+
+.blog {
+  background-color: var(--forth-color);
+  height: 110vh;
+}
+
+.up-blog {
+  flex-wrap: wrap;
+}
+
+.blog-card {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.blog-content {
+  padding: 1rem 3rem 1rem 3rem;
+}
+
+.blog-content h3 {
+  font-family: "ale_sans";
+  font-size: 2rem;
+  color: var(--sixth-color);
+  padding-top: 1rem;
+}
+
+.blog-content h4 {
+  font-family: Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  color: var(--fifth-color);
+  padding-top: 1.4rem;
+}
+
+.blog-content p {
+  font-family: Helvetica, sans-serif;
+  font-weight: 500;
+  color: var(--fifth-color);
+  padding: 1.4rem 0rem 3rem 0rem;
+}
+
+.blog-content a {
+  font-family: Helvetica, sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--ninth-color);
+  padding-top: 4rem;
+}
+
+/*  ********* section quote ******** */
+
+.quote {
+  background-image: url("../img/testimonials.jpg");
+  background-position: contain;
+  background-repeat: no-repeat;
+  height: 46vh;
+}
+
+.quote-text {
+  font-size: 2rem;
+  color: var(--primary-color);
+  padding: 7rem 10rem 3rem 10rem;
+  text-align: center;
+  z-index: 5;
+}
+
+.quote-text::before {
+  content: "";
+  position: absolute;
+  top: 197rem;
+  left: 50%;
+  width: 90vw;
+  height: 30vh;
+  background-color: rgba(0, 0, 0, 0.15);
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.quote-button {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  z-index: 15;
+  position: relative;
+}
+
+.quote-button button {
+  font-family: Helvetica, sans-serif;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  font-size: 1rem;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.quote-button button:hover {
+  color: var(--second-color);
+  background-color: var(--primary-color);
+}
+
+/* **********  section  testimonials   ********* */
+
+.testimonials {
+  background-color: var(--tenth-color);
+  height: 80vh;
+}
+
+.text-testimonials h1 {
+  font-family: "ale_sans";
+  color: var(--sixth-color);
+  font-size: 2rem;
+  text-align: center;
+  padding: 3rem 0rem 2rem 0rem;
+}
+
+.text-testimonials p {
+  font-family: Helvetica, sans-serif;
+  color: var(--fifth-color);
+
+  text-align: center;
+}
+
+.staff {
+  font-family: Helvetica, sans-serif;
+  color: var(--fifth-color);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 6rem;
+  padding-top: 6rem;
+}
+
+.staff-card {
+  width: 20vw;
+}
+
+.staff-card p {
+  padding: 2rem 0rem 1rem 0rem;
+}
+
+.staff-card h5 {
+  padding: 2rem 0rem 0.3rem 0rem;
+  margin: 0;
+}
+
+.staff-card h4 {
+  font-weight: 200;
+}
+
+/* ***********  section contact ******** */
+
+.contact {
+  background-image: url("../img/footer.png");
+  background-repeat: no-repeat;
+  height: 60vh;
+}
+
+.contact-text {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.contact-text h2 {
+  font-family: "ale-sans";
+  color: var(--primary-color);
+  font-size: 2.4rem;
+}
+
+.contact-text p {
+  font-family: Helvetica, sans-serif;
+  color: var(--primary-color);
+  padding-top: 2rem;
+}
+
+.contact::before {
+  content: "";
+  position: absolute;
+  top: 256rem;
+  left: 50%;
+  width: 90vw;
+  height: 52vh;
+  background-color: rgba(0, 0, 0, 0.15);
+  transform: translateX(-50%);
+  z-index: 10;
+}
+/* ****** form container ****** */
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 15;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  width: 60vw;
+}
+
+.form-box input,
+.form-box textarea {
+  font-family: Helvetica, sans-serif;
+  color: var(--primary-color);
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.form-box input::placeholder,
+.form-box textarea::placeholder {
+  color: var(--primary-color);
+}
+
+.form-box button {
+  font-family: Helvetica, sans-serif;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  font-size: 1rem;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--primary-color);
+  font-family: Helvetica, sans-serif;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  align-self: center;
+}
+
+.form-box button:hover {
+  color: var(--second-color);
+  background-color: var(--primary-color);
+}
+
+/*   ********* footer ********  */
+
+footer {
+  background-color: var(--eleventh-color);
+  height: 22vh;
+}
+
+footer {
+  font-family: Helvetica, sans-serif;
+  color: var(--primary-color);
+  padding: 5rem;
+}
+
+/*  ****** media queries *******/
+/* ******* tablet media queries *********/
+
+@media only screen and (max-width: 992px) {
+  .slogan {
+    height: 60vh;
+  }
+
+  .latest-work {
+    height: 55vh;
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    padding: 2rem 2rem;
+   
+  }
+  
+
+
+
+
+  .services {
+    background-image: url("../img/services.png");
+    background-position: fill;
+    background-repeat: no-repeat;
+    height: 55vh;
+    
+  }
+  
+  .services::before {
+    content: "";
+    position: absolute;
+    top: 105rem;
+    left: 50%;
+    width: 100vw;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    transform: translateX(-50%);
+  }
+  
+  .up-services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+  }
+  
+  .title-services {
+    font-size: 2.4rem;
+  }
+  
+  .text-services {
+    font-family: Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+    padding-top: 1rem;
+  }
+  
+  /*  ******* icon boxes ********/
+  
+  
+
+
+}
