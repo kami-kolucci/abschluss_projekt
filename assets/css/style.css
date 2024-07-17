@@ -340,7 +340,7 @@ nav {
 .quote-text::before {
   content: "";
   position: absolute;
-  top: 197rem;
+  top: 202rem;
   left: 50%;
   width: 90vw;
   height: 30vh;
@@ -618,7 +618,6 @@ footer p {
   /*  ********* section quote ******** */
 
   .quote {
-    background-color: var(--tenth-color);
     height: 46vh;
   }
 
@@ -680,7 +679,7 @@ footer p {
 
   footer p {
     font-family: Helvetica, sans-serif;
-    color: var(--second-color);
+
     padding: 0rem 0rem 0rem 3rem;
   }
 }
@@ -710,193 +709,162 @@ footer p {
     height: 200vh;
   }
 
-
   .gallery {
     row-gap: 1rem;
     justify-content: center;
     padding-top: 2rem;
     padding: 2rem 70rem 2rem 70rem;
-  
-    
   }
-  
+
   .gallery-img {
     display: flex;
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
     width: 80wv;
-    
   }
-
-
-
-
-
-
-
-
-
-
-
-  /* hier weiter machen */
-
-
-  .up-latest-work {
-   
-    justify-content:center;
-    gap: 7rem;
-  }
-  
-  .left {
-    padding: 3rem 0rem 1rem 8rem;
-  }
-  
-  .title-latest-work {
-    
-    font-size: 2rem;
-    width: 13rem;
-  }
-  
-  .text-latest-work {
-
-    padding-top: 2rem;
-  }
-
-
-
-
-
 
   .gallery {
-      padding: 2rem 2rem;
-    }
+    padding: 2rem 2rem;
+  }
 
   .services {
     padding-top: 5rem;
-    height: 120vh;
+    height: 123vh;
   }
 
   .services::before {
-    top: 93rem;
+    top: 153rem;
     left: 50%;
     width: 95vw;
-    height: 75vh;
-  }
-
-  .up-services {
-    height: 3vh;
+    height: 110vh;
   }
 
   /*  ******* icon boxes ********/
 
-  .icon-boxes {
-    flex-direction: column;
-    align-items: center;
-    padding-top: 8rem;
-  }
-
   .service-icon {
-    width: 30vw;
+    width: 50vw;
     text-align: center;
-    height: 10vh;
+    height: 17vh;
   }
 
   .service-icon h3 {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   /* ****** section blog ******* */
 
   .blog {
-    background-color: var(--forth-color);
-    height: 55vh;
+    height: 280vh;
+  }
+
+  .up-blog {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+  }
+
+  .left {
+    width: 60vw;
+    padding: 2rem 0rem 0rem 3rem;
+  }
+
+  .text-blog {
+    width: 80vw;
+  }
+
+  .right {
+    width: 50vw;
+    padding: 2rem;
+  }
+
+  .right button {
+    width: 40vw;
+    padding: 1.6rem;
+    font-size: 1.5rem;
   }
 
   .blog-card {
-    display: flex;
+    display: block;
   }
 
   .blog-content {
     padding: 1rem 1rem 1rem 1rem;
-    width: 30vw;
+    width: 100vw;
+    padding-bottom: 2rem;
   }
 
   .blog-content img {
-    width: 24vw;
+    width: 100vw;
   }
 
   .blog-content h3 {
     padding-top: 1rem;
+    font-size: 3rem;
   }
 
   .blog-content h4 {
     padding-top: 0rem;
+    font-size: 1.2rem;
   }
 
   .blog-content p {
     padding: 1rem 0rem 0.5rem 0rem;
+    font-size: 1.3rem;
   }
 
   .blog-content a {
-    padding-top: 0rem;
+    padding-bottom: 3rem;
+    font-size: 1.3rem;
   }
 
   /*  ********* section quote ******** */
 
   .quote {
-    background-color: var(--tenth-color);
-    height: 46vh;
+    background-image: url("../img/testimonials.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 70vh;
+  }
+
+  .quote-text {
+    font-size: 2rem;
+    color: var(--primary-color);
+    padding: 8rem 2rem 3rem 2rem;
+
+    z-index: 5;
   }
 
   .quote-text::before {
-    top: 197rem;
+    top: 365rem;
     left: 50%;
     width: 90vw;
-    height: 27vh;
+    height: 43vh;
   }
 
   /* **********  section  testimonials   ********* */
 
   .testimonials {
-    height: 95vh;
-  }
-
-  .text-testimonials h1 {
-    padding: 2rem 0rem 0rem 0rem;
-  }
-
-  .staff {
-    flex-direction: column;
-    align-items: center;
-
-    row-gap: 4rem;
-    padding-top: 3rem;
-  }
-
-  .staff-card {
-    width: 70vw;
+    height: 180vh;
   }
 
   .staff-card p {
-    padding: 0rem 0rem 0rem 0rem;
-  }
-
-  .staff-card h5 {
-    padding: 1.4rem 0rem 0.3rem 0rem;
+    font-size: 1.4rem;
+    padding-top: 1rem;
   }
 
   /* ***********  section contact ******** */
 
   .contact {
-    height: 60vh;
+    height: 90vh;
   }
 
   .contact::before {
-    top: 295rem;
+    top: 488rem;
     left: 50%;
     width: 90vw;
-    height: 40vh;
+    height: 52vh;
   }
 
   /*   ********* footer ********  */
@@ -907,7 +875,7 @@ footer p {
 
   footer p {
     font-family: Helvetica, sans-serif;
-    color: var(--second-color);
+
     padding: 0rem 0rem 0rem 3rem;
   }
 }
