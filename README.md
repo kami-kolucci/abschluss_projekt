@@ -13,8 +13,11 @@ Dieses Projekt entstand im Rahmen meiner Ausbildung zum Web Developer. Hierbei h
 
 1. Repository klonen: `git clone git@github.com:kami-kolucci/abschluss_projekt.git`
 2. Die `index.html` Datei in einem Webbrowser öffnen.
+
    
-## Media Query // Ich habe die Media Queries für Tablet auf einem 820 x 1180 Pixel und die Mobile Version auf einem 428 x 926 Pixel Bildschirm konzipiert. Bitte stellt euren Bildschirm auf diese Größe ein.
+## Media Query  
+## Ich habe die Media Queries für Tablet auf einem 820 x 1180 Pixel und die Mobile Version auf einem 428 x 926 Pixel Bildschirm konzipiert. Bitte stellt euren Bildschirm auf diese Größe ein.
+
 
 ## Rückmeldungen
 
